@@ -1,0 +1,43 @@
+<html>
+  <head>
+  <title>TP7-EX2</title>
+  <meta charset="UTF-8">
+  <style>
+  h3{
+  color:red;
+  text-align:center;}
+  table{
+  background-color:red;
+  margin-left:auto;
+  margin-right:auto;}
+  th{background-color:orange;}
+  td{background-color:yellow;}
+  </style>
+  </head>
+  <body bgcolor="black">
+  <table border cellpadding="10">
+  <script>
+  var i;
+  var n=0;
+  var j;
+  var p;
+  document.write("<h3><u>Table de multiplication des entiers compris entre 0 et 9:</u></h3>");
+  document.write("<tr><th></th>");
+  for (i=0 ;i<=9;i++){
+   document.write("<th>"+i+"</th>");
+   }
+  document.write("</tr>");
+  while(n<=9){
+  document.write("<tr>");
+  document.write("<th>"+n+"</th>");
+  for(j=0;j<=9;j++){
+  p=n*j;
+  document.write("<td>"+p+"</td>");
+  }
+  document.write("</tr>");
+  n++;
+  }
+  </script>
+  </table>
+  </body>
+</html>
